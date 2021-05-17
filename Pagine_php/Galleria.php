@@ -60,7 +60,6 @@
 			<div id="barra">
 			<h1>Cerchi una idea regalo?</h1>
 			Cerca prodotto in galleria : <input type="text" />
-			<button>Pulisci</button>
 			</div>
 		<!--<div id="filtrati"></div>-->
 		

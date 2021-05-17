@@ -218,17 +218,6 @@ function filtra(event){
 		}
 }
 
-function pulisci(event){
-	const tasto = event.currentTarget;
-	const filtraggio = document.querySelectorAll('.filtrati');
-	for(let item of filtraggio){
-		item.remove();
-	}
-}
-
-const canc = document.querySelector('#barra button');
-canc.addEventListener('click', pulisci);
-
 
 //BARRA DI RICERCA
 const oggetti = document.querySelectorAll('.oggetto');
