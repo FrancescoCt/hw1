@@ -55,7 +55,22 @@ function aggiungi(event){
 		
 			const didascalia = document.createElement('article');
 			
-			didascalia.textContent = articles[i].textContent;
+			//Metto nella didascalia tutti gli span tranne il bottone "Meno dettagli" sennò compare la scritta
+			let stringa = '';
+			
+			if(event.currentTarget.parentNode.childNodes[4].childNodes[5] != undefined){//Caso del primo div
+				for(let i = 0; i<5;i++){
+					stringa = stringa + event.currentTarget.parentNode.childNodes[4].childNodes[i].textContent;
+				}
+				
+			}else{
+				for(let i = 0; i<4;i++){	//Caso del secondo div
+					stringa = stringa + " "+event.currentTarget.parentNode.childNodes[4].childNodes[i].textContent;
+				}
+			}
+			didascalia.textContent = stringa;
+			//Fine modifica
+			
 			oggetto.appendChild(didascalia);
 	
 			const rimuovi = document.createElement('button');
@@ -99,28 +114,21 @@ function rimozione(event){
 	const titoloPreferiti = document.querySelector('#preferiti h1');
 	
 	const immaginiDiv = document.querySelectorAll('.oggetto img');
-	console.log(event.currentTarget.parentNode.childNodes[1].src);//immagine elemento
-	console.log(event.currentTarget.parentNode); //elemento
-	console.log(event.currentTarget.parentNode.childNodes[2]);
 	
 	const elemento = event.currentTarget.parentNode;
 	const imgSrc = event.currentTarget.parentNode.childNodes[1].src;
 
 	for(let i = 0; i<N; i++){
 		if(immaginiDiv[i] != undefined && immaginiDiv[i].src == imgSrc){
-			console.log("entrato nell'if");
 			immaginiDiv[i].parentNode.childNodes[0].classList.add('hidden');
-			console.log(immaginiDiv[i].parentNode.childNodes[0]);
 			
 			immaginiDiv[i].parentNode.childNodes[5].addEventListener('click', aggiungi);
-			console.log(immaginiDiv[i].parentNode.childNodes[5]);
 			elemento.remove();
 			const dati = new FormData();
 			dati.append('rimuovi', imgSrc);
 			fetch("../Pagine_php/rimuoviPreferiti.php", {method: 'post', body: dati}).then(onRimuovi).then(onConferma1);
 		}
 		else {
-			console.log("entrato nell'else");
 			elemento.remove();
 			const dati = new FormData();
 			dati.append('rimuovi', imgSrc);
@@ -144,7 +152,6 @@ function onRimuovi(response){
 	return response.text();
 }
 function onConferma1(json){
-	console.log(json);
 }
 //////////////////////////////////////////////////////////////////
 //Funzione caricamento dei contenuti dei preferiti (richiesta al database per i preferiti)

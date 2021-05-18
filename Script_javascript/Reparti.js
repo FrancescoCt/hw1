@@ -55,8 +55,17 @@ function aggiungi(event){
 			oggetto.appendChild(codice);
 		
 			const didascalia = document.createElement('article');
+			//Metto nella didascalia tutti gli span tranne il bottone "Meno dettagli" sennò compare la scritta
+			let stringa = '';
 			
-			didascalia.textContent = articles[i].textContent;
+			if(event.currentTarget.parentNode.childNodes[4].childNodes[2] != undefined){//Script home js calibrato per i reparti
+				for(let i = 0; i<2;i++){
+					stringa = stringa+ " "+event.currentTarget.parentNode.childNodes[4].childNodes[i].textContent;
+				}
+				
+			}
+			didascalia.textContent = stringa;
+			//Fine modifica
 			oggetto.appendChild(didascalia);
 	
 			const rimuovi = document.createElement('button');

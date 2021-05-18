@@ -68,7 +68,7 @@
 		
 		<div id="barra">
 			<h1>Cerchi una idea regalo?</h1>
-			Cerca prodotto o reparto in pagina : <input type="text" />
+			Cerca prodotto o reparto in pagina : <input type="text" placeholder = 'Cerca'/>
 		</div>
 		<!--<div id="filtrati"></div>-->
 		
@@ -197,7 +197,7 @@
 			<h1>Cerchi una marca particolare?</h1>
 			<form method = 'post'>
 				
-				<label>Dai un'occhiata ad alcuni dei nostri fornitori:  <input type="text" name = 'stringa'/></label>
+				<label>Dai un'occhiata ad alcuni dei nostri fornitori:  <input type="text" placeholder = 'Cerca' name = 'stringa'/></label>
 				
 			</form>
 			

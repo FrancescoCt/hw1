@@ -65,7 +65,7 @@
 		
 		
 		<form name='accesso' action='Login.php' method='post'>
-			<label>Codice Fiscale   <input type='text' name='cf_utente' ></label>
+			<label>Codice Fiscale   <input type='text' placeholder = 'Codice Fiscale' name='cf_utente' ></label>
 			<label>Password   <input type='password' name='pswd_utente' ></label>
 			<label><input type='submit' name='invio' value='Login' ></label>
 			

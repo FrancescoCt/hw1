@@ -45,7 +45,7 @@
 			</nav>
 		</header>
 
-			<p>Ciao <?php echo /*$_COOKIE["nome"]*/$_SESSION["nome"]?>, ti presentiamo i nostri reparti!</p>
+			<p>Ciao <?php echo $_SESSION["nome"]?>, ti presentiamo i nostri reparti!</p>
 			<p><?php echo date("d-m-Y"); ?></p>
 		
 			<div id="preferiti">
@@ -56,7 +56,7 @@
 			
 			<div id="barra">
 			<h1>Cerchi un reparto?</h1>
-			Trova reparto in galleria : <input type="text" />
+			Trova reparto in galleria : <input type="text" placeholder = 'Cerca'/>
 			</div>
 		<!--<div id="filtrati"></div>-->
 		

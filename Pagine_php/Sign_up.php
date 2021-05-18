@@ -72,11 +72,11 @@
 		
 			<div id='credenziali'>
 			<form action='Sign_up.php' method='post'>
-				<label>Nome<input type='text' name='nome_utente' ></label>
-			<label>Cognome<input type='text' name='cognome_utente' ></label>
-			<label>Codice fiscale <input type='text' name='cf_utente' ></label>
-			<label>Telefono <input type='text' name='tel_utente' ></label>
-			<label>Data di nascita <input type='text' name='nascita_utente' value='YYYY-MM-DD' ></label>
+				<label>Nome<input type='text' placeholder = 'Nome' name='nome_utente' ></label>
+			<label>Cognome<input type='text' placeholder = 'Cognome' name='cognome_utente' ></label>
+			<label>Codice fiscale <input type='text' placeholder = 'Codice Fiscale' name='cf_utente' ></label>
+			<label>Telefono <input type='text' placeholder = '095 913215' name='tel_utente' ></label>
+			<label>Data di nascita <input type='text' placeholder = '1980-01-01' name='nascita_utente'></label>
 			<label>Password<input type='password' name='pswd_utente' ></label>
 			<!-- La pagina del sign in deve valere solo per i clienti, gli impiegati vengono gestiti da un altro sistema, per semplicità facciamo finta che sono già stati inseriti-->
 			<label>Abbonamento<select name='abbonamento_utente'>

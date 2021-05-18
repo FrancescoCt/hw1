@@ -59,7 +59,7 @@
 			
 			<div id="barra">
 			<h1>Cerchi una idea regalo?</h1>
-			Cerca prodotto in galleria : <input type="text" />
+			Cerca prodotto in galleria : <input type="text" placeholder = 'Cerca'/>
 			</div>
 		<!--<div id="filtrati"></div>-->
 		
