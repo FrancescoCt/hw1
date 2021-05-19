@@ -82,7 +82,7 @@
 		
 		</div>
 		<div class = "hidden">
-		<p>Errore: Compilare tutti i campi</p>
+		<p>Errore: I campi non sono compilati o la password non rispetta le specifiche</p>
 		</div>
 		
 		<p>Non sei registrato? <a href="Sign_up.php">Clicca qui</a> per iscriverti!</p>

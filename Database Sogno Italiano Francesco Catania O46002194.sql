@@ -1004,24 +1004,24 @@ insert into pezzi values ('14','5','30.74');
 /*CLIENTE (CF, NOME, COGNOME, TELEFONO, NASCITA, ETA, ABBONAMENTO, PASSWORD)*/
 
 
-/*PASSWORD DI DEFAULT DEI CLIENTI PROVA è L'HASH DI "123456789" OTTENUTO CON md5(123456789) LATO PHP*/
+/*PASSWORD DI DEFAULT DEI CLIENTI PROVA è L'HASH DI "123456789" OTTENUTO CON md5('SognoItaliano!1') LATO PHP*/
 
-insert into cliente values ('SEMADA08','Sempronio', 'Adamo','003083437','1960-04-03',(datediff(current_timestamp(),nascita )/365),'settimanale','25f9e794323b453885f5181f1b624d0b');
+insert into cliente values ('SEMADA08','Sempronio', 'Adamo','003083437','1960-04-03',(datediff(current_timestamp(),nascita )/365),'settimanale','b42fc6e1122b95d186773704f69bb634');
 
-insert into cliente values ('LUIVER42','Luigi', 'Vergari','864764342','1977-3-2',(datediff(current_timestamp(),nascita )/365),'settimanale','25f9e794323b453885f5181f1b624d0b' );
-insert into cliente values ('LUIVER82','Luigi', 'Vergari','745772823','2001-10-7',(datediff(current_timestamp(),nascita )/365),'settimanale','25f9e794323b453885f5181f1b624d0b');
+insert into cliente values ('LUIVER42','Luigi', 'Vergari','864764342','1977-3-2',(datediff(current_timestamp(),nascita )/365),'settimanale','b42fc6e1122b95d186773704f69bb634' );
+insert into cliente values ('LUIVER82','Luigi', 'Vergari','745772823','2001-10-7',(datediff(current_timestamp(),nascita )/365),'settimanale','b42fc6e1122b95d186773704f69bb634');
 
-insert into cliente values ('FRACAT01','Francesco', 'Catanzaro','727320636','1990-11-0',(datediff(current_timestamp(),nascita )/365),'settimanale','25f9e794323b453885f5181f1b624d0b');
-insert into cliente values ('LUIVER67','Luigi', 'Vergari','452312027','2000-11-3',(datediff(current_timestamp(),nascita )/365),'settimanale','25f9e794323b453885f5181f1b624d0b');
+insert into cliente values ('FRACAT01','Francesco', 'Catanzaro','727320636','1990-11-0',(datediff(current_timestamp(),nascita )/365),'settimanale','b42fc6e1122b95d186773704f69bb634');
+insert into cliente values ('LUIVER67','Luigi', 'Vergari','452312027','2000-11-3',(datediff(current_timestamp(),nascita )/365),'settimanale','b42fc6e1122b95d186773704f69bb634');
 
-insert into cliente values ('VALDES61','Valentina', 'Desantis','435261274','1977-2-6',(datediff(current_timestamp(),nascita )/365),'mensile','25f9e794323b453885f5181f1b624d0b');
-insert into cliente values ('EMAPAN73','Emanuele', 'Panascia','615066616','2001-1-10',(datediff(current_timestamp(),nascita )/365),'mensile','25f9e794323b453885f5181f1b624d0b');
-insert into cliente values ('CARDES56','Carolina', 'Desantis','548128735','1977-1-4',(datediff(current_timestamp(),nascita )/365),'mensile','25f9e794323b453885f5181f1b624d0b');
+insert into cliente values ('VALDES61','Valentina', 'Desantis','435261274','1977-2-6',(datediff(current_timestamp(),nascita )/365),'mensile','b42fc6e1122b95d186773704f69bb634');
+insert into cliente values ('EMAPAN73','Emanuele', 'Panascia','615066616','2001-1-10',(datediff(current_timestamp(),nascita )/365),'mensile','b42fc6e1122b95d186773704f69bb634');
+insert into cliente values ('CARDES56','Carolina', 'Desantis','548128735','1977-1-4',(datediff(current_timestamp(),nascita )/365),'mensile','b42fc6e1122b95d186773704f69bb634');
 
 
-insert into cliente values ('GIUBEL62','Giulio', 'Belfiore','244014632','2002-2-9',(datediff(current_timestamp(),nascita )/365),'annuale','25f9e794323b453885f5181f1b624d0b');
-insert into cliente values ('LUIGUE15','Luigi', 'Guerrera','880607467','1994-5-7',(datediff(current_timestamp(),nascita )/365),'annuale','25f9e794323b453885f5181f1b624d0b');
-insert into cliente values ('FRAMAR34','Francesco', 'Marano','050067412','2001-10-9',(datediff(current_timestamp(),nascita )/365),'annuale','25f9e794323b453885f5181f1b624d0b');
+insert into cliente values ('GIUBEL62','Giulio', 'Belfiore','244014632','2002-2-9',(datediff(current_timestamp(),nascita )/365),'annuale','b42fc6e1122b95d186773704f69bb634');
+insert into cliente values ('LUIGUE15','Luigi', 'Guerrera','880607467','1994-5-7',(datediff(current_timestamp(),nascita )/365),'annuale','b42fc6e1122b95d186773704f69bb634');
+insert into cliente values ('FRAMAR34','Francesco', 'Marano','050067412','2001-10-9',(datediff(current_timestamp(),nascita )/365),'annuale','b42fc6e1122b95d186773704f69bb634');
 
 
 /*IMPIEGATO(CF, NOME, COGNOME, TELEFONO, NASCITA, MATRICOLA, RUOLO)*/

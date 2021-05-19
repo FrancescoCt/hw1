@@ -93,7 +93,7 @@
 		</div>
 		
 		<div class = "hidden">
-			<p>Errore: Controlla che tutti i campi siano compilati e la password sia maggiore di 5 caratteri </p>
+			<p>Errore: uno dei requisiti non è stato soddisfatto</p>
 		</div>
 		
 		<?php
@@ -107,8 +107,9 @@
 		?>
 		<h2>Regole per la registrazione</h2>
 		<p>
-			<li>Tutti i campi devono essere riempiti affinchè il form sia compilato</li>
-			<li>La password prevede almeno 6 caratteri perchè il form sia compilato</li>
+			<li>Tutti i campi devono essere riempiti affinchè il form sia compilato correttamente</li>
+			<li>La password deve prevedere almeno 6 caratteri perchè il form sia compilato</li>
+			<li>La password deve essere alfanumerica e contenere almeno un carattere speciale</li>
 			<li>Se non ci sono errori verrai riportato alla pagina di login</li>
 		</p>
 		<p>Sei già registrato? <a href="Login.php">Clicca qui</a> per accedere.</p>

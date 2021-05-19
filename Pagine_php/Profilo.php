@@ -71,9 +71,13 @@
 				
 			</p>
 			
-			<h2>Modifica Form</h2>
+			<h2>Modifica dati utente</h2>
 			<form id= 'elimina' method='post' <!--action='Sign_up.php'-->
-				<p>Cancella e vai al Signup per la nuova registrazione</p>
+				<p>
+					Se i dati non sono corretti inserisci la password per la rimozione account
+					
+				
+				</p>
 				<label><input type='password' name='pswd' value='Password'></label>
 				<label><input type='submit' name='invio' value='Cancella' ></label>
 			</form>

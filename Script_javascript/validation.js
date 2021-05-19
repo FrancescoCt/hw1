@@ -12,6 +12,15 @@ function validazione(event){
 		errore.classList.remove('hidden');
 		event.preventDefault();
 	}
+	if(/[A-Za-z]+/.test(pswd) && /[0-9]+/.test(pswd) && /[^a-z0-9]+/i.test(pswd)){
+				console.log("La password è alfanumerica con caratteri speciali");
+				
+	}else{
+		const errore = document.querySelector('.hidden');
+		console.log(errore);
+		errore.classList.remove('hidden');
+		event.preventDefault();
+	}
 }
 
 const form = document.querySelector('form');
